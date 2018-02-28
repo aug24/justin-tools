@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Horrid one-liner to find account number
+
+aws "$@" ec2 describe-security-groups | jq -r '.SecurityGroups[0].OwnerId'
+

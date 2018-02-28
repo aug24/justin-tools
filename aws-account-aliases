@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#To find account aliases
+
+aws "$@" iam list-account-aliases
+
+

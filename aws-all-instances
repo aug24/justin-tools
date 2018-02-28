@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Create a table of useful information about all instances in an account:
+
+aws "$@" ec2 describe-instances \
+  | jq -r '.Reservations|.[]|.Instances|.[]|{Tags: (.Tags|from_entries), InstanceId, PublicDnsName, PrivateDnsName, PublicIpAddress, PrivateIpAddress}|[.Tags.App // "null", .Tags.Stack // "null", .Tags.Stage // "null", .InstanceId, .PrivateIpAddress, .PublicDnsName]|@tsv' \
+  | column -t
+
