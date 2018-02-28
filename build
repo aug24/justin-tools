@@ -1,0 +1,5 @@
+#!/bin/bash
+
+tar -czf justin-tools.tar.gz $(find . -perm +111 -type f | grep -v '^./.git/' | grep -v '^./build$')
+shasum -a 256 justin-tools.tar.gz 
+
