@@ -1,0 +1,6 @@
+#!/bin/bash
+git rm -r $1
+git commit --amend --no-edit
+git reflog expire --expire=now --all
+git gc --prune=now --aggressive
+git push --force
