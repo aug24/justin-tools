@@ -1,8 +1,6 @@
 # A set of useful scripts.  
 
-To build, use 'build', then make a github release and update the homebrew-tools entry for this repo.
-
-See `http://github.com/aug24/homebrew-tools/blob/master/Formula/tools.rb`
+To build, use 'build', then make a github release and update the [homebrew-tools](http://github.com/aug24/homebrew-tools/blob/master/Formula/tools.rb) entry for this repo.
 
 # To install:
 
