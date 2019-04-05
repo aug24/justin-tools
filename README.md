@@ -2,6 +2,10 @@
 
 To build, use 'build', then make a github release and update the homebrew-tools entry for this repo.
 
+# To install:
+
+`brew install aug24/tools/tools`
+
 # Stuff that isn't scripts yet...!
 
 
