@@ -2,6 +2,8 @@
 
 To build, use 'build', then make a github release and update the homebrew-tools entry for this repo.
 
+See `http://github.com/aug24/homebrew-tools/blob/master/Formula/tools.rb`
+
 # To install:
 
 `brew install aug24/tools/tools`
